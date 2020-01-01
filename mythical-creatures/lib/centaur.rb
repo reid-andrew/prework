@@ -70,13 +70,4 @@ class Centaur
       @runs = 0
     end
   end
-
-  # def drink_potion
-  #   if !standing?
-  #     "Stand up first"
-  #   else
-  #     @shots = 0
-  #     @runs = 0
-  #   end
-  # end
 end
