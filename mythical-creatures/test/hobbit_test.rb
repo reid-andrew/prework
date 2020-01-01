@@ -87,6 +87,7 @@ class HobbitTest < Minitest::Test
     # check that .has_ring? for Frodo returns true
     # check that .has_ring? for Sam returns false
     hobbit = Hobbit.new('Frodo')
+    # binding.pry
     assert hobbit.has_ring?
     hobbit = Hobbit.new('Sam')
     refute hobbit.has_ring?
