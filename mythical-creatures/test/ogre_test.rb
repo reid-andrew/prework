@@ -1,9 +1,11 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/ogre'
+require_relative '../lib/human'
 
 class OgreTest < Minitest::Test
   def test_it_has_a_name
+    skip
     ogre = Ogre.new('Brak')
     assert_equal 'Brak', ogre.name
   end
@@ -21,7 +23,7 @@ class OgreTest < Minitest::Test
   end
 
   def test_it_can_meet_humans
-    skip
+    # skip
     ogre = Ogre.new('Brak')
     human = Human.new
     assert_equal 'Jane', human.name
@@ -95,7 +97,7 @@ class OgreTest < Minitest::Test
     skip
     ogre = Ogre.new('Brak')
     human = Human.new
-    
+
     6.times do
       ogre.encounter(human)
     end
