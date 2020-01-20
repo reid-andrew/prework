@@ -22,6 +22,8 @@ class HorseTest < Minitest::Test
     harry = Horse.new("Harry")
     harry.add_to_diet("Hay")
     harry.add_to_diet("Sugar Cubes")
+    # harry.add_to_diet("Carrots")
+    # harry.add_to_diet("Sugar Cubes")
     assert_equal ["Hay", "Sugar Cubes"], harry.diet
   end
 end

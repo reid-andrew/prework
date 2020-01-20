@@ -12,7 +12,7 @@ class CatTest < Minitest::Test
     carlos = Cat.new("Carlos")
     assert_equal "Carlos", carlos.name
   end
-
+  
   def test_it_has_a_sound
     carlos = Cat.new("Carlos")
     assert_equal "meow", carlos.sound
