@@ -5,6 +5,7 @@ require_relative '../lib/wizard'
 
 class WizardTest < Minitest::Test
   def test_has_name
+    skip
     wizard = Wizard.new("Eric")
     assert_equal "Eric", wizard.name
   end
@@ -16,7 +17,7 @@ class WizardTest < Minitest::Test
   end
 
   def test_is_bearded_by_default
-    skip
+    # skip
     wizard = Wizard.new("Ben")
     assert wizard.bearded?
   end
@@ -61,4 +62,3 @@ class WizardTest < Minitest::Test
   end
 
 end
-
