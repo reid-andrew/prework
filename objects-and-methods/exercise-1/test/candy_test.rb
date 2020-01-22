@@ -5,14 +5,14 @@ require_relative '../lib/candy'
 
 class CandyTest < Minitest::Test
   def test_candy_type
+    # skip
     candy = Candy.new("Skittles")
     assert_equal "Skittles", candy.type
   end
 
   def test_other_type_of_candy
-    skip
+    # skip
     candy = Candy.new("Mars")
     assert_equal "Mars", candy.type
   end
 end
-
